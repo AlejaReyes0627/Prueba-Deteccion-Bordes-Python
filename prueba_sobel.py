@@ -9,12 +9,12 @@ gray = np.mean(img, axis = 2)
 
 Hx = np.array(([-1, 0, 1], [-2, 0, 2], [-1, 0, 1])) # Sorbel Filter
 Hy = np.array(([-1, -2, -1], [0, 0, 0], [1, 2, 1])) # Prewitt filter
-#Hx2 = np.array(([1, 2, 1], [0, 0, 0], [-1, -2, -1])) # DERICHE A VER SI SE PUEDE HACER
+################Hx2 = np.array(([1, 2, 1], [0, 0, 0], [-1, -2, -1])) # DERICHE A VER SI SE PUEDE HACER
 #Hx2 = np.array(([0, 1, 0], [1, -4, 1], [0, 1, 0])) LAPLACIANO
 
 #Hx2 = np.array(([2, -1, 2], [-1, -4, -1], [2, -1, 2])) otro laplaciano xD
 #Hx2 = np.array(([-1, -1, -1], [-1, 8, -1], [-1, -1, -1])) otro laplaciano x3
-Hx2 = np.array(([-1, -1, -1], [0, 0, 0], [1, 1, 1]))
+Hx2 = np.array(([-1, -1, -1], [0, 0, 0], [1, 1, 1]))##roberto
 
 
 SGx = convolve2d(gray, Hx)
