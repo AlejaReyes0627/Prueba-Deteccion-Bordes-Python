@@ -45,7 +45,7 @@ plt.imshow(LapScaled, cmap='gray')
 plt.axis('off')
 plt.show()
 
-# image ehancement
+# image enchancement
 c = -1
 g = f + c*LapScaled
 g = np.clip(g, 0, 1)
