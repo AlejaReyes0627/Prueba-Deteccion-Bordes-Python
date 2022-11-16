@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # open and normalized the image
-f = cv2.imread('herramientas.jpg',0)
+f = cv2.imread('lena-std.png',0)
 f = f / 255
 
 plt.figure(dpi=150)

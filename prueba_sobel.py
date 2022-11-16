@@ -7,7 +7,7 @@ from scipy.signal import convolve2d
 img = Image.open('herramientas.jpg')
 gray = np.mean(img, axis = 2)
 
-Hx = np.array(([-1, 0, 1], [-2, 0, 2], [-1, 0, 1])) # Sorbel Filter
+Hx = np.array(([-1, 0, 1], [-2, 0, 2], [-1, 0, 1])) # Sobel Filter
 
 SGx = convolve2d(gray, Hx)
 SGy = convolve2d(gray, Hx)
