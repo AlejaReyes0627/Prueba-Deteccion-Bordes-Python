@@ -52,7 +52,7 @@ output_5 = cv2.resize(output_5, (800, 600))
 #output_6 = cv2.resize(output_6, (800, 600))
 cv2.imshow('Original Image', image)
 cv2.imshow('sharpen_2 Image', output_2)
-cv2.imshow('sharpen_4 Image', output_4)
+cv2.imshow('laplacian', output_4)
 cv2.imshow('sharpen_5 Image', output_5)
 #cv2.imshow('sharpen_6 Image', output_6)
  # Pausa
