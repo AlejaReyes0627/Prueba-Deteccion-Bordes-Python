@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
-img = cv2.imread("lena-std.png", cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("martillo.jpg", cv2.IMREAD_GRAYSCALE)
 lap = cv2.Laplacian(img, cv2.CV_64F, ksize=3)
 lap = np.uint8(np.absolute(lap))
 sobelX = cv2.Sobel(img, cv2.CV_64F, 1, 0)
