@@ -1,5 +1,4 @@
 
-# Filtrado de convolución personalizado
 import cv2
 import numpy as np
 
@@ -43,18 +42,15 @@ kernel_Laplacian_4 = np.array([
 output_2 = cv2.filter2D(image, -1, kernel_Sobel_x)
 output_4 = cv2.filter2D(image, -1, kernel_Laplacian_1)
 output_5 = Canny(image,3,50,150)
-#output_6 = kirsch(image)
  # Mostrar efecto de afilado
 image = cv2.resize(image, (800, 600))
 output_2 = cv2.resize(output_2, (800, 600))
 output_4 = cv2.resize(output_4, (800, 600))
 output_5 = cv2.resize(output_5, (800, 600))
-#output_6 = cv2.resize(output_6, (800, 600))
 cv2.imshow('Original Image', image)
-cv2.imshow('sharpen_2 Image', output_2)
+cv2.imshow('sobel', output_2)
 cv2.imshow('laplacian', output_4)
-cv2.imshow('sharpen_5 Image', output_5)
-#cv2.imshow('sharpen_6 Image', output_6)
+cv2.imshow('canny', output_5)
  # Pausa
 if cv2.waitKey(0) & 0xFF == 27:
     cv2.destroyAllWindows()

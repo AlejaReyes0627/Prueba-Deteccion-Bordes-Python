@@ -11,7 +11,6 @@ edges = cv2.Canny(img,100,200)
 
 sobelX = np.uint8(np.absolute(sobelX))
 sobelY = np.uint8(np.absolute(sobelY))
-
 sobelCombined = cv2.bitwise_or(sobelX, sobelY)
 
 titles = ['image', 'Laplacian','sobelCombined', 'Canny']
