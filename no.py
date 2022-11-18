@@ -40,16 +40,6 @@ kernel_Laplacian_2 = np.array([
     [1, 1, 1],
     [1, -8, 1],
     [1, 1, 1]])
- # Los siguientes dos núcleos de convolución no tienen invariancia de rotación
-kernel_Laplacian_3 = np.array([
-    [2, -1, 2],
-    [-1, -4, -1],
-    [2, 1, 2]])
-kernel_Laplacian_4 = np.array([
-    [-1, 2, -1],
-    [2, -4, 2],
-    [-1, 2, -1]])
-
 output_4 = cv2.filter2D(image, -1, kernel_Laplacian_1)
  # Mostrar efecto de afilado
 image = cv2.resize(image, (800, 600))
