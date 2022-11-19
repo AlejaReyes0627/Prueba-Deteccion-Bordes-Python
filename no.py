@@ -9,7 +9,7 @@ from scipy.signal import convolve2d
 #Metodo Sobel
 
  # Cargar imagen
-img = Image.open('lena-std.png')
+img = Image.open('martillo.jpg')
 gray = np.mean(img, axis = 2)
 
 Hx = np.array(([-1, 0, 1], [-2, 0, 2], [-1, 0, 1])) # Sobel Filter
@@ -28,7 +28,7 @@ plt.show()
 #Metodo Laplaciano
 
  # Cargar imagen
-image = cv2.imread('lena-std.png',0)
+image = cv2.imread('martillo.jpg',0)
 image = cv2.resize(image,(800,800))
 
  # Kernel de convolución de Laplace
