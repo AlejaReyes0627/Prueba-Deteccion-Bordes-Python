@@ -40,7 +40,7 @@ kernel_Laplacian_2 = np.array([
     [1, 1, 1],
     [1, -8, 1],
     [1, 1, 1]])
-output_4 = cv2.filter2D(image, -1, kernel_Laplacian_1)
+output_4 = cv2.filter2D(image, 0, kernel_Laplacian_1)
  # Mostrar efecto de afilado
 image = cv2.resize(image, (800, 600))
 output_4 = cv2.resize(output_4, (800, 600))
